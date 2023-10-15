@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P">
+  <title>Document</title>
+  <script src="index.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <main class="main-container">
+      <h1 class="page-title">Pokedex</h1>
+          <div class="dex-container">
+            <div class="left-side">
+            <div class="left-side-indicators">
+              <svg height="100" width="250" class="left-svg">
+                <polyline
+                  points="0,75 70,75 90,38 250,38"
+                  style="fill: none; stroke: black; stroke-width: 3"
+                />
+              </svg>
+              <div class="left-side-indicator-big">
+                <div class="shine-effect"></div>
+              </div>
+              <div class="left-side-indicator-small">
+                <div class="red"></div>
+                <div class="yellow"></div>
+                <div class="green"></div>
+              </div>
+            </div>
+    
+            <div class="left-side-display-container">
+              <div class="left-side-display-border">
+                <div class="left-side-display-content">
+                <img class="poke-img" src="#" alt="">
+                </div>
+                <div class="display-red">
+    
+                </div>
+              </div>
+            </div>
+            <div class="left-side-buttons">
+              <div class="circle-button"></div>
+              <form id="search-form" action="">
+                <input type="text" class="search-name" name="name" value="empoleon">
+              </form>
+                <div class="pad-container">
+                <div class="upper-raw">
+                  <div class="up-key"></div>
+                </div>
+                <div class="middle-raw">
+                  <div class="left-right-keys">
+                    <div class="center-square"></div>
+                  </div>
+                </div>
+                <div class="lower-raw">
+                  <div class="down-key"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="empty">
+              <svg height="100%" width="100%">
+                <polyline
+                  points="0,0 0,40 145,40 175,75 250,75 250,0 0,0"
+                  style="fill: #527; stroke: none; stroke-width: 3"
+                />
+                <polyline
+                  points="0,40 145,40 175,75 250,75"
+                  style="fill: none; stroke: black; stroke-width: 3"
+                />
+              </svg>
+            </div>
+            <div class="right-side-container">
+              <div class="about">
+                <div class="about-screen">
+                  <p class="poke-id">ID</p>
+                  <p class="poke-height">Height</p>
+                  <p class="poke-weight">Weight</p>
+                </div>
+              </div>
+              <div class="square-buttons"></div>
+              <div class="misc-buttons">
+                <div class="misc-left">
+                  <div class="misc-left-btn"></div>
+                  <div class="misc-left-btn"></div>
+                </div>
+                <div class="misc-right">
+                  <div class="misc-right-top">
+                    <div class="misc-right-top-btns"></div>
+                    <div class="misc-right-top-btns"></div>
+                  </div>
+                  <div class="misc-right-bot"></div>
+                </div>
+              </div>
+              <div class="rectangle-buttons">
+                <div class="rectangle-btn type1">Show Type</div>
+                <div class="rectangle-btn type2">Show Type</div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <h5 class="instructions">Type the pokemon name or #</h5>
+    </main>
+    
+    <footer>
+      <a class="credits" href="https://github.com/terwebs">Created by Ter_webs</a>
+    </footer> 
+  
+  
+</body>
+</html>
