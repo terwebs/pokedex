@@ -19,6 +19,16 @@ const createSquareBtns = function() {
 
 createSquareBtns()
 
+//submit a request based on the pokemon name or id
+const getPoke = async function(formData){
+  const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${formData}`)
+  pokeImg.src = pokemon.data.sprites.front_default
+  pokeId.innerText = `#: ${pokemon.data.id}`
+  pokeHeight.innerText = `Height: ${pokemon.data.height/10}m`
+  pokeWeight.innerText = `Weight: ${pokemon.data.weight/10}kg`
+  checkTypes(pokemon)  
+}
+
 //listen to input to find the pokemon
 form.addEventListener('submit', function(event){
   event.preventDefault();
@@ -37,15 +47,7 @@ function checkTypes(pokemon){
   }
 }
 
-//submit a request based on the pokemon name or id
-getPoke = async function(formData){
-  const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${formData}`)
-  pokeImg.src = pokemon.data.sprites.front_default
-  pokeId.innerText = `#: ${pokemon.data.id}`
-  pokeHeight.innerText = `Height: ${pokemon.data.height/10}m`
-  pokeWeight.innerText = `Weight: ${pokemon.data.weight/10}kg`
-  checkTypes(pokemon)  
-}
+
 
 getPoke('empoleon')
 
