@@ -3,4 +3,4 @@ Pokedex built with HTML/CSS to practice working with APIs, the form accepts a po
 
 API used: https://pokeapi.co/
 
-# [Live Demo] https://terwebs.github.io/pokedex/
+# [Live Demo](https://terwebs.github.io/pokedex/)
