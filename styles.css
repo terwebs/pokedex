@@ -162,10 +162,10 @@ body{
 
 .center-square{
   width: 20px;
-  height: 26px;
+  height: 28px;
   background-color: gray;
   position: relative;
-  top: -2px;
+  top: -3px;
   border: none;
 }
 
@@ -202,6 +202,21 @@ body{
 
 .empty{
   height: 78px;
+}
+
+.top-border{
+  height: 8px;
+  width: 250px;
+  background-color: #527;
+  position: absolute;
+  top: -4px;
+} 
+.right-border{
+  align-self: flex-end;
+  height: 76px;
+  width: 248px;
+  border-right: 4px #527 solid;
+  position: absolute;
 }
 
 .right-side-container{
@@ -313,12 +328,20 @@ body{
   font-family: "Nunito Sans",sans-serif;
 }
 
+footer{
+  display: flex;
+  flex-direction: column;
+}
+
 a, .credits{
   text-decoration: none;
+  text-align: center;
   font-style: italic;
   color: white;
   font-family: 'Courier New', Courier, monospace;
 }
+
+
 
 
 /* page not intended to be responsive, however adding media for minimum adjustment */
@@ -326,6 +349,7 @@ a, .credits{
 @media screen and (max-width: 600px) {
   body{
     width: 100%;
+    background: linear-gradient(90deg, #730000 50%,#527 50%);
   }
   .dex-container{
     transform: scale(0.8);
@@ -333,7 +357,7 @@ a, .credits{
   .page-title{
     font-size: 3rem;
   }
-
+ 
 }
 
 @media screen and (max-width: 440px) {
@@ -346,5 +370,6 @@ a, .credits{
     font-size: 2rem;
   }
 
+ 
 
 }
