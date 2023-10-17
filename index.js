@@ -22,13 +22,24 @@ createSquareBtns()
 
 //submit a request based on the pokemon name or id
 const getPoke = async function(formData){
-  const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${formData}`)
-  pokeImg.src = pokemon.data.sprites.front_default
-  pokeId.innerText = `#: ${pokemon.data.id}`
-  pokeHeight.innerText = `Height: ${pokemon.data.height/10}m`
-  pokeWeight.innerText = `Weight: ${pokemon.data.weight/10}kg`
-  searchName.value = pokemon.data.name
-  checkTypes(pokemon)  
+  try{
+    const pokemon = await axios.get(`https://pokeapi.co/api/v2/pokemon/${formData}`)
+    pokeImg.src = pokemon.data.sprites.front_default
+    pokeId.innerText = `#: ${pokemon.data.id}`
+    pokeHeight.innerText = `Height: ${pokemon.data.height/10}m`
+    pokeWeight.innerText = `Weight: ${pokemon.data.weight/10}kg`
+    searchName.value = pokemon.data.name
+    checkTypes(pokemon)  
+  } catch(err) {
+    pokeId.innerText = 'not found'
+    pokeHeight.innerText = 'not found'
+    pokeWeight.innerText = 'not found'
+    pokeType1.innerText = 'not found'
+    pokeType2.innerText = 'not found'
+    pokeImg.src = "https://archives.bulbagarden.net/media/upload/9/9e/Ghost_I.png"
+  }
+
+  
 }
 
 //listen to input to find the pokemon
