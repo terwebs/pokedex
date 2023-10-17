@@ -8,6 +8,7 @@ const pokeType1 = document.querySelector('.type1')
 const pokeType2 = document.querySelector('.type2')
 
 const form = document.querySelector('#search-form')
+const searchName = document.querySelector('.search-name')
 
 const createSquareBtns = function() {
   for (let i=1; i<= 10; i++){
@@ -26,6 +27,7 @@ const getPoke = async function(formData){
   pokeId.innerText = `#: ${pokemon.data.id}`
   pokeHeight.innerText = `Height: ${pokemon.data.height/10}m`
   pokeWeight.innerText = `Weight: ${pokemon.data.weight/10}kg`
+  searchName.value = pokemon.data.name
   checkTypes(pokemon)  
 }
 
