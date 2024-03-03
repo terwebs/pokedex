@@ -1,38 +1,40 @@
-body{
+body {
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Press Start 2P', 'lucida console';
+  font-family: "Press Start 2P", "lucida console";
   height: 100vh;
-  background: linear-gradient(65deg ,#730000 50%,#527 50%);
+  background: linear-gradient(65deg, #730000 50%, #527 50%);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.page-title{
+.page-title {
   text-align: center;
   color: antiquewhite;
   letter-spacing: 0.3rem;
   font-size: 4rem;
 }
 
-.main-container{
+.main-container {
   max-height: 800px;
   display: flex;
+  justify-content: space-between;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.dex-container{
+.dex-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.left-side{
+.left-side {
   width: 250px;
   height: 400px;
   background-color: #d30a40;
@@ -42,20 +44,20 @@ body{
   border-radius: 2%;
 }
 
-.left-side-display-container{
+.left-side-display-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.left-side-indicators{
-  height: 104PX;
+.left-side-indicators {
+  height: 104px;
 }
 
-.left-side-indicator-big{
+.left-side-indicator-big {
   height: 55px;
   width: 55px;
-  background-color:#3298cb;
+  background-color: #3298cb;
   border-radius: 50%;
   position: relative;
   top: -95px;
@@ -63,7 +65,7 @@ body{
   border: solid white 3px;
 }
 
-.shine-effect{
+.shine-effect {
   height: 25%;
   width: 25%;
   position: relative;
@@ -73,7 +75,9 @@ body{
   border-radius: 50%;
 }
 
-.red, .yellow, .green{
+.red,
+.yellow,
+.green {
   position: relative;
   height: 20px;
   width: 20px;
@@ -81,26 +85,25 @@ body{
   border: solid black 1px;
 }
 
-.red{
+.red {
   background-color: red;
   left: 105px;
   top: -150px;
 }
 
-.yellow{
+.yellow {
   background-color: yellow;
   left: 130px;
   top: -172px;
 }
 
-.green{
+.green {
   background-color: green;
   left: 155px;
   top: -194px;
 }
 
-
-.left-side-display-border{
+.left-side-display-border {
   width: 180px;
   height: 180px;
   background-color: white;
@@ -111,7 +114,7 @@ body{
   justify-content: center;
 }
 
-.left-side-display-content{
+.left-side-display-content {
   width: 80%;
   height: 80%;
   background-color: rgb(37, 37, 37);
@@ -119,37 +122,39 @@ body{
   color: gray;
 }
 
-.poke-img{
+.poke-img {
   width: 144px;
   height: 144px;
 }
 
-.left-side-buttons{
+.left-side-buttons {
   display: grid;
   grid-template-columns: 30px 120px 70px;
   gap: 10px;
 }
 
-.pad-container{
+.pad-container {
   display: flex;
   flex-direction: column;
   width: 70px;
   box-sizing: border-box;
 }
 
-.upper-raw, .lower-raw{
+.upper-raw,
+.lower-raw {
   display: flex;
   justify-content: center;
 }
 
-.up-key, .down-key {
+.up-key,
+.down-key {
   background-color: gray;
   height: 22px;
   width: 20px;
   border: solid 1px black;
 }
 
-.left-right-keys{
+.left-right-keys {
   background-color: gray;
   height: 21px;
   width: 70px;
@@ -161,7 +166,7 @@ body{
   box-sizing: border-box;
 }
 
-.center-square{
+.center-square {
   width: 20px;
   height: 28px;
   background-color: gray;
@@ -170,7 +175,7 @@ body{
   border: none;
 }
 
-.circle-button{
+.circle-button {
   background-color: gray;
   width: 30px;
   height: 30px;
@@ -179,19 +184,19 @@ body{
   border: solid 1px black;
 }
 
-.search-name{
+.search-name {
   margin-top: 30px;
   width: 110px;
   height: 50px;
   border-radius: 4%;
   background-color: #5fc480;
-  outline : none;
-  font-family: 'Press Start 2P';
+  outline: none;
+  font-family: "Press Start 2P";
   font-size: 0.55rem;
   color: rgb(37, 37, 37);
 }
 
-.right-side{
+.right-side {
   width: 250px;
   height: 400px;
   background-color: #d30a40;
@@ -201,18 +206,18 @@ body{
   border-radius: 2%;
 }
 
-.empty{
+.empty {
   height: 78px;
 }
 
-.top-border{
+.top-border {
   height: 8px;
   width: 250px;
   background-color: #527;
   position: absolute;
   top: -4px;
-} 
-.right-border{
+}
+.right-border {
   align-self: flex-end;
   height: 76px;
   width: 248px;
@@ -220,8 +225,8 @@ body{
   position: absolute;
 }
 
-.right-side-container{
-  width: 250PX;
+.right-side-container {
+  width: 250px;
   display: grid;
   gap: 10px;
   grid-template-rows: 80px 80px 50px 60px;
@@ -229,7 +234,7 @@ body{
   padding-top: 35px;
 }
 
-.about{
+.about {
   background-color: rgb(37, 37, 37);
   width: 200px;
   height: 80px;
@@ -237,7 +242,7 @@ body{
   border-radius: 4%;
 }
 
-.about-screen{
+.about-screen {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -248,51 +253,51 @@ body{
   letter-spacing: 0.01rem;
 }
 
-.square-buttons{
+.square-buttons {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
 }
 
-.square-btn{
+.square-btn {
   background-color: #3298cb;
   width: 100%;
   height: 100%;
   border: solid 1px black;
 }
 
-.misc-buttons{
+.misc-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.misc-left{
+.misc-left {
   display: flex;
   justify-content: flex-start;
   padding-top: 10px;
 }
 
-.misc-left-btn{
+.misc-left-btn {
   width: 30px;
   height: 30px;
   background-color: white;
   border: solid 1px black;
 }
 
-.misc-right-top{
+.misc-right-top {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-.misc-right-top-btns{
+.misc-right-top-btns {
   background-color: rgb(37, 37, 37);
   width: 40px;
   height: 10px;
   border-radius: 4%;
 }
 
-.misc-right-bot{
+.misc-right-bot {
   background-color: rgb(255, 230, 0);
   border-radius: 50%;
   width: 25px;
@@ -303,14 +308,13 @@ body{
   border: solid 1px black;
 }
 
-
-.rectangle-buttons{
+.rectangle-buttons {
   display: flex;
   justify-content: space-between;
 }
 
-.rectangle-btn{
-  width:  90px;
+.rectangle-btn {
+  width: 90px;
   height: 40px;
   background-color: rgb(37, 37, 37);
   border-radius: 4%;
@@ -322,54 +326,49 @@ body{
   letter-spacing: 0.001rem;
 }
 
-.instructions{
+.instructions {
   text-align: center;
   font-size: 1.2rem;
-  color:  antiquewhite;
-  font-family: "Nunito Sans",sans-serif;
+  color: antiquewhite;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: column;
 }
 
-a, .credits{
+a,
+.credits {
   text-decoration: none;
   text-align: center;
   font-style: italic;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-
-
-
 
 /* page not intended to be responsive, however adding media for minimum adjustment */
 
 @media screen and (max-width: 600px) {
-  .dex-container{
+  .dex-container {
     transform: scale(0.8);
   }
-  .page-title{
+  .page-title {
     font-size: 3rem;
   }
 }
 
 @media screen and (max-width: 440px) {
- 
   .dex-container {
     transform: scale(0.7);
   }
-  .page-title{
+  .page-title {
     font-size: 2rem;
   }
 }
 
-
-@media screen and (max-width: 360px){
-  body{
-    
+@media screen and (max-width: 360px) {
+  body {
     background: #527;
   }
 }
